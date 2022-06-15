@@ -1,6 +1,23 @@
+// 颜色设置
+$cyan-color: #0BB2D4; // 青色
+$blue-color: #3E8EF7; // 蓝色
+$green-color: #11C26D; // 绿色
+$blue-green-color: #17B3A3; // 蓝绿色
+$indigo-color: #667AFA; // 靛青色
+$brown-color: #997B71; // 棕色
+$purple-color: #9463F7; // 紫色
+$gray-color: #757575; // 灰色
+$orange-color: #EB6709; // 橙色
+$pink-color: #F74584; // 粉红色
+$yellow-color: #FCB900; // 黄色
+$red-color: #FF4C52; // 红色
+
 // 站点主色
 // tips: 要达到整站主题修改效果, 请确保[$--color-primary]站点主色与[/src/element-ui-theme/index.js]文件中[import './element-[#17B3A3]/index.css']当前主题色一致
-$--color-primary: #3E8EF7;
+// $--color-primary: $cyan-color;
+$--color-primary: var(--theme-color, $cyan-color);
+
+// $--color-theme: var(--theme-color, $cyan-color);
 
 // Navbar
 $navbar--background-color: $--color-primary;

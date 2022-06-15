@@ -11,6 +11,9 @@ import httpRequest from '@/utils/httpRequest' // api: https://github.com/axios/a
 import { isAuth } from '@/utils'
 import cloneDeep from 'lodash/cloneDeep'
 import PubSub from 'pubsub-js'
+// 全局变量挂载
+import globalMsg from './global.js'
+Vue.prototype.$global_msg = globalMsg
 
 Vue.prototype.PubSub = PubSub
 Vue.use(VueCookie)

@@ -10,8 +10,19 @@ body {
   color: #303133;
   background-color: #fff;
 }
+// a {
+//   color: mix(#fff, var(--theme-color), 20%);
+//   text-decoration: none;
+//   &:focus,
+//   &:hover {
+//     color: var(--theme-color);
+//     text-decoration: underline;
+//   }
+// }
+// @import 'variables.scss';
 a {
-  color: mix(#fff, $--color-primary, 20%);
+  // color: mix(#fff, $--color-primary, 20%);
+  color: $--color-primary;
   text-decoration: none;
   &:focus,
   &:hover {
@@ -22,6 +33,18 @@ a {
 img {
   vertical-align: middle;
 }
+
+// /* $--color-primary
+// ------------------------------ */
+// &--theme-cyan {
+//   $--color-primary: $cyan-color;
+// }
+// &--theme-blue {
+//   $--color-primary: $blue-color;
+// }
+// .theme-color {
+//   background-color: $cyan-color;
+// }
 
 
 /* Utils
@@ -137,12 +160,14 @@ img {
         &:focus,
         &:hover {
           color: #fff;
-          background-color: mix(#000, $navbar--background-color, 15%);
+          // background-color: mix(#000, $navbar--background-color, 15%);
+          background-color: $navbar--background-color;
         }
       }
       > .el-menu-item.is-active,
       > .el-submenu.is-active > .el-submenu__title {
-        border-bottom-color: mix(#fff, $navbar--background-color, 85%);
+        // border-bottom-color: mix(#fff, $navbar--background-color, 85%);
+        border-bottom-color: $navbar--background-color;
       }
       .el-menu-item i,
       .el-submenu__title i,
