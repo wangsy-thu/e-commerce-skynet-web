@@ -1,9 +1,10 @@
+import globalMsg from '../../global.js'
 export default {
   namespaced: true,
   state: {
     // 页面文档可视高度(随窗口改变大小)
     documentClientHeight: 0,
-    // 主题主色 cyan(默认青色) / blue(蓝色)
+    // 主题主色 cyan(默认青色) / blue(蓝色)......
     themeColorType: '#3E8EF7',
     // 导航条, 布局风格, defalut(默认) / inverse(反向)
     navbarLayoutType: 'inverse',
@@ -27,9 +28,13 @@ export default {
     updateThemeColorType (state, type) {
       state.themeColorType = type
       console.log(type)
+      globalMsg.setThemeColor(type)
+      console.log('asd')
+      console.log(globalMsg.themeColor)
+      // if (globalMsg.themeColor === type) {
+      //   import('../../element-ui-theme/element-' + type + '/index.css')
+      // }
       console.log(document.documentElement.style.getPropertyValue('--theme-color'))
-      // document.documentElement.style.setProperty('--color-primary', '#667AFA')
-      // console.log(document.documentElement.style.getPropertyValue('--color-primary'))
       document.getElementsByTagName('body')[0].style.setProperty('--theme-color', type)
       console.log(document.documentElement.style.getPropertyValue('--theme-color'))
     },

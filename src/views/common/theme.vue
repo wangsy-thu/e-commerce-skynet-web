@@ -3,8 +3,8 @@
     <h2>布局设置</h2>
     <el-form-item label="导航条类型">
       <el-radio-group v-model="navbarLayoutType">
-        <el-radio label="default" border>默认</el-radio>
-        <el-radio label="inverse" border>白色</el-radio>
+        <el-radio label="default" border>白色</el-radio>
+        <el-radio label="inverse" border>默认</el-radio>
       </el-radio-group>
     </el-form-item>
     <h2>主题设置</h2>
@@ -24,10 +24,10 @@
         <el-radio label="#FF4C52" border>红色</el-radio>
       </el-radio-group>
     </el-form-item>
-    <el-form-item label="侧边栏皮肤">
+    <el-form-item label="侧边栏颜色">
       <el-radio-group v-model="sidebarLayoutSkin">
         <el-radio label="light" border>白色</el-radio>
-        <el-radio label="dark" border>灰色</el-radio>
+        <el-radio label="dark" border>黑色</el-radio>
       </el-radio-group>
     </el-form-item>
   </el-form>

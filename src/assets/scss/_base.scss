@@ -159,7 +159,8 @@ img {
         color: #fff;
         &:focus,
         &:hover {
-          color: #fff;
+          color: black;
+          // color: $navbar--background-color;
           // background-color: mix(#000, $navbar--background-color, 15%);
           background-color: $navbar--background-color;
         }
@@ -284,6 +285,7 @@ img {
   &--dark,
   &--dark-popper {
     background-color: $sidebar--background-color-dark;
+    // background-color: red;
     .site-sidebar__menu.el-menu,
     > .el-menu--popup {
       background-color: $sidebar--background-color-dark;

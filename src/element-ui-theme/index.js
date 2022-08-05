@@ -17,9 +17,11 @@ import './element-#3E8EF7/index.css' // 当前主题色
 // import './element-#F74584/index.css'
 // import './element-#FCB900/index.css'
 // import './element-#FF4C52/index.css'
-// if (this.$global_msg.themeColor == "#FF4C52") {
-//   import './element-#FF4C52/index.css';
+// import globalMsg from '../global.js'
+// if (globalMsg.themeColor === '#FF4C52') {
+//   import('./element-#FF4C52/index.css')
 // }
+// import '../../assets/element-ui-theme/element-#3E8EF7/index.css'
 
 export default {
   list: [
